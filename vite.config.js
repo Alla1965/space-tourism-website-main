@@ -4,10 +4,11 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: 'index.html',
-        destination: 'pages/destination-moon.html',
+         main: 'index.html',
+        capsule: 'pages/technology-capsule.html',
+        vehicle: 'pages/technology-vehicle.html',
         crew: 'pages/crew-commander.html',
-        technology: 'pages/technology-capsule.html'
+        destination: 'pages/destination-moon.html'
       }
     }
   }

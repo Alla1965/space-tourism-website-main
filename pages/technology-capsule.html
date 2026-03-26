@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+
+</head>
+<body class="tech-page">
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-md  p-4 py-md-385 px-md-40
+                pt-xxl-64 pb-xxl-4 ps-xxl-64 pe-xxl-0">
+      
+        <!-- LOGO -->
+        <a class="navbar-brand" href="#">
+           <img 
+          class="logo-size"
+          src="/src/assets/shared/logo.svg" 
+          alt="logo" >
+        </a>
+        
+        <!-- BURGER -->
+
+         <button
+          class="navbar-toggler border-0 "
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+            <img 
+          class=""
+          src="/src/assets/shared/icon-hamburger.svg" 
+          alt="logo" >
+        </button> 
+ 
+        <!-- MENU -->
+         <div class="nav-mobile ms-md-auto" id="navMenu"> 
+
+           <!-- ❌ КНОПКА ЗАКРЫТИЯ -->
+            <button class="nav-close d-flex ms-auto py-32 pe-4
+               bg-transparent border-0 text-white fs-3 mb-80
+               d-md-none">
+
+                <img 
+                  class=""
+                  src="/src/assets/shared/icon-close.svg" 
+                  alt="logo" >
+           </button> 
+
+          <ul class="navbar-nav gap-32 text-uppercase text-preset-8">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html"><span class="fw-bold ls-27">00</span> Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/pages/destination-moon.html"><span class="fw-bold ls-27">01</span> Destination</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/pages/crew-commander.html"><span class="fw-bold ls-27">02</span> Crew</a></li>
+            <li class="nav-item active"><a class="nav-link text-white active" href="/pages/technology-vehicle.html"><span class="fw-bold ls-27">03</span> Technology</a></li>
+          </ul>
+        </div> 
+     
+    </nav> 
+
+     <main>
+       <div class="w-100  p-4 p-md-40 py-xxl-5 ps-xxl-165 pe-xxl-0">
+
+       <h1 class="fs-6 lh-base ls-15 text-white font-barlow-cons fw-normal 
+                   text-center mb-4 
+                  fs-md-20 text-md-start 
+                  fs-xxl-28 text-xxl-start ls-xxl-4">
+        <span class="opacity-25 fw-bold ">03 </span> Space launch 101</h1> 
+
+        <div class="d-flex flex-column flex-xxl-row-reverse gap-xxl-32">
+        
+
+          <div class="d-flex flex-column gap-4 py-32 
+                  py-md-42  align-items-xxl-end me-xxl-5 flex-fill">
+
+         <!-- Image CREW  -->
+              <div class="tech-img">
+                <picture>
+                <!-- Десктоп -->
+                <source 
+                  media="(min-width: 1400px)" 
+                  srcset="/src/assets/technology/image-space-capsule-landscape.jpg">
+
+                <!-- По умолчанию (мобилка/планшет) -->
+                <img 
+                  class=""
+                  src="/src/assets/technology/image-space-capsule-portrait.jpg"
+                </picture>           
+              </div>
+          </div>
+
+         <!-- TEXT+IMAGE BLOCK  -->   
+
+          <div class="d-flex flex-column gap-32 justify-content-center flex-fill
+                     align-items-center flex-xxl-row gap-xxl-64">
+          <!--    MENU+IMAGE BLOCK    -->   
+           
+             <!--    MENU BLOCK    -->   
+             <!-- <div class="d-flex justify-content-center"> -->
+             <nav class="d-flex justify-content-xxl-start align-items-center gap-3 
+                         gap-xxl-40 flex-xxl-column" style="width: fit-content;">
+                <a class="tech-menu  " href="/pages/technology-vehicle.html">1</a>
+                <a class="tech-menu active" href="/pages/technology-spaceport.html">2</a>
+                <a class="tech-menu active" href="/pages/technology-capsule.html">3</a>
+             </nav>
+             <!-- </div> -->
+
+             <!-- Text BLOCK  --> 
+             <div class="d-flex flex-column align-items-xxl-center">
+              <h2 class="txt-18 lh-base text-white text-center opacity-50 mb-2 
+                         txt-md-24 mb-md-3 txt-xxl-32 text-xxl-start text-uppercase">
+                         The terminology...
+              </h2>
+              <p class="txt-24 lh-base text-white mb-4 text-uppercase text-center
+                        txt-md-40 txt-xxl-56 text-xxl-start
+                        ">Space capsule</p>
+              <p class="fs-15 color-light font-barlow text-center lh-18
+                       fs-md-16  txt-xxl-18 text-xxl-start">
+                 A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+  capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+  you'll spend your time during the flight. It includes a space gym, cinema, 
+  and plenty of other activities to keep you entertained.
+              </p>
+              
+             </div>
+           </div> 
+           </div>
+                
+        </div>
+
+      </main>
+ 
+   <script type="module" src="/src/main.js"></script>
+</body>
+</html>

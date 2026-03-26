@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-md  p-4 py-md-385 px-md-40
+                pt-xxl-64 pb-xxl-4 ps-xxl-64 pe-xxl-0">
+      
+        <!-- LOGO -->
+        <a class="navbar-brand" href="#">
+           <img 
+          class="logo-size"
+          src="/src/assets/shared/logo.svg" 
+          alt="logo" >
+        </a>
+        
+        <!-- BURGER -->
+
+         <button
+          class="navbar-toggler border-0 "
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+            <img 
+          class=""
+          src="/src/assets/shared/icon-hamburger.svg" 
+          alt="logo" >
+        </button> 
+ 
+        <!-- MENU -->
+         <div class="nav-mobile ms-md-auto" id="navMenu">   -->
+
+           <!-- ❌ КНОПКА ЗАКРЫТИЯ -->
+            <button class="nav-close d-flex ms-auto py-32 pe-4
+               bg-transparent border-0 text-white fs-3 mb-80
+               d-md-none">
+
+                <img 
+                  class=""
+                  src="/src/assets/shared/icon-close.svg" 
+                  alt="logo" >
+           </button> 
+
+          <ul class="navbar-nav gap-32 text-uppercase text-preset-8">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html"><span class="fw-bold ls-27">00</span> Home</a></li>
+            <li class="nav-item active"><a class="nav-link text-white active" href="/pages/destination-moon.html"><span class="fw-bold ls-27">01</span> Destination</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/pages/crew-commander.html"><span class="fw-bold ls-27">02</span> Crew</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/pages/technology-vehicle.html"><span class="fw-bold ls-27">03</span> Technology</a></li>
+          </ul>
+        </div> 
+     
+    </nav> 
+
+      <main>
+       <div class="w-100 p-4 p-md-40 py-xxl-5 px-xxl-165">
+       <h1 class="fs-16 ls-15 text-white font-barlow-cons fw-normal 
+                   text-center mb-96 mb-md-4
+                  fs-md-20 text-md-start
+                  fs-xxl-28 text-xxl-start">
+        <span class="opacity-25 fw-bold ">01 </span>Pick your destination</h1>
+
+        <div class="d-flex flex-column justify-content-center flex-xxl-row flex-fill">
+
+           <!-- Image Planet + MENU -->
+
+            <div class="w-100 d-flex flex-column align-items-center">  
+
+              <!-- Image Planet  -->
+               <div class="d-flex flex-column gap-4 py-265 
+                           py-md-42 py-xxl-128 align-items-xxl-end me-xxl-5">
+
+              <img 
+               class="size-planet-mobile size-planet-tablet size-planet-desktop"
+               src="/src/assets/destination/image-titan.png" 
+               alt="Moon" >
+               </div>
+
+               <!-- Menu Planet  -->
+                
+               <nav class="d-flex gap-32 pb-15 text-center text-preset-7 
+                           h-auto order-first order-md-last order-lg-first
+                            ms-xxl-auto move-nav         ">
+                 <a class="bg-color-dark color-light border-0 ls-2 bg-transparent fs-md-3 tab text-decoration-none  tab-planet " href="/pages/destination-moon.html">MOON</a>
+                 <a class="bg-color-dark color-light border-0 ls-2 bg-transparent fs-md-3 tab text-decoration-none  tab-planet" href="/pages/destination-mars.html">MARS</a>
+                 <a class="bg-color-dark color-light border-0 ls-2 bg-transparent fs-md-3 tab text-decoration-none  tab-planet" href="/pages/destination-europa.html">EUROPA</a>
+                 <a class="bg-color-dark color-light border-0 ls-2 bg-transparent fs-md-3 tab text-decoration-none active tab-planet" href="/pages/destination-titan.html">TITAN</a>
+               </nav>
+
+              </div>
+                
+          <!-- TEXT BLOCK  -->    
+              <div class="w-100 d-flex flex-column mt-xxl-auto pb-xxl-133">
+
+              <h2 class="fs-56 mt-4 mb-3 text-white text-center fs-md-80">    TITAN</h2>
+
+              <p class="fs-15 fs-md-16 color-light font-barlow text-center lh-18 mb-4 
+                       fs-md-16 ">
+              The only moon known to have a dense atmosphere other than Earth, Titan 
+              is a home away from home (just a few hundred degrees colder!). As a 
+              bonus, you get striking views of the Rings of Saturn.
+              </p>
+              <hr class="w-100 color-light mb-4">
+
+              <!-- DISTANCE TRAVEL BLOCK  --> 
+
+              <div class="d-flex flex-column gap-4 justify-content-center 
+                          flex-md-row justify-content-md-between">
+
+              <!-- DISTANCE   --> 
+               <div class="mx-md-auto">
+                <h3 class="color-light text-center text-preset-7 mb-12"> Avg. distance </h3>
+                <p class="text-white text-center text-preset-6 lh-18 lh-normal">1.6 BIL. KM</p>
+               </div>
+
+              <!-- TRAVEL   --> 
+              <div class="mx-md-auto">
+                <h3 class="color-light text-center text-preset-7 mb-12"> Est. travel time</h3>
+                <p class="text-white text-center text-preset-6 lh-18 lh-normal">7 YEARS</p>
+               </div>
+
+              </div>
+              </div>
+
+       </div>
+
+    </main>
+
+   <script type="module" src="/src/main.js"></script>
+</body>
+</html>

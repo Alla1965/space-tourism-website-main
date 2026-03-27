@@ -11,7 +11,9 @@
 @import "./custom";
 
 
-
+// * {
+//   cursor: pointer !important;
+// }
 body{
 font-family: 'Bellefair', serif;
 
@@ -338,4 +340,33 @@ body {
   flex-direction: column;
   gap: 32px;
     }
+}
+
+.btn-md {
+  position: relative;
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  font-size: 18px;
+  z-index: 1;
+}
+
+/* Кольцо */
+.btn-md::after {
+  content: "";
+  position: absolute;
+  inset: -40px; /* размер внешнего круга */
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+/* Hover */
+.btn-md:hover::after {
+  opacity: 1;
 }

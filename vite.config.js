@@ -11,7 +11,8 @@ export default defineConfig({
         // DESTINATION
         moon: 'pages/destination-moon.html',
         mars: 'pages/destination-mars.html',
-
+        europa: 'pages/destination-europa.html',
+        titan: 'pages/destination-titan.html',
         // CREW
         commander: 'pages/crew-commander.html',
         specialist: 'pages/crew-specialist.html',

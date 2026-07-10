@@ -29,15 +29,24 @@ The goal was to practice creating a responsive multi-page website using HTML, CS
 ## Project Structure
 
 space-tourism-website-main/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── pages/
-│   ├── styles/
-│   └── main.js
-├── index.html
-├── package.json
-└── README.md
+-  public/
+-  src/
+- - assets/
+- - -  crew/
+ - - -  css/
+- - -  destination/
+- - -  home/
+- - -  js/
+- - -  shared/
+- - -  technology/
+- - scss/
+- counter.js
+-  main.js
+-  style.css
+-  index.html
+-  data.json
+-  package.json
+-  README.md
 
 ## What I Learned
 While building this project, I practiced:
@@ -51,7 +60,7 @@ While building this project, I practiced:
 
    ## Links
 - Repository: https://github.com/Alla1965/space-tourism-website-main
- -Live Site: add-your-live-site-link-here
+ - Live Site: https://space-tourism-website-main-gules.vercel.app
   
 ## Author
  - GitHub - Alla1965
